@@ -1,0 +1,25 @@
+[project]
+name = "kramp_feature"
+description = "This holds the spelling correction and feature extraction code to build the baseline comparison classifier,"
+version = "0.0.0"
+readme = "README.md"
+dependencies = [
+    "torch",
+    "pandas",
+    "scikit-learn",
+    "numpy",
+    "transformers",
+    "datasets",
+    "tiktoken",
+    "protobuf",
+    "sentencepiece"
+]
+classifiers = [
+    "Private :: Do Not Upload",
+]
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {}
