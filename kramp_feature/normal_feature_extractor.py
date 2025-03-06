@@ -339,7 +339,7 @@ class NormalFeatureExtractor:
             if not self.grammar_mistakes_per_chunk:
                 raise RuntimeError('Grammar mistakes per chunk not found. Please initialize the feature extractor first.')
 
-            feature_matrix = np.zeros((len(self.grammar_mistakes_per_chunk.keys()), len(feature_names)), dtype=np.int8)
+            feature_matrix = np.zeros((len(self.grammar_mistakes_per_chunk.keys()), len(feature_names)), dtype=np.int16)
             
             for i in tqdm(range(len(self.grammar_mistakes_per_chunk.keys())), desc='Extracting Grammar Features', file=open(log_file, 'w') if log_file else None):
                 for j, feature_name in enumerate(feature_names):
@@ -351,7 +351,7 @@ class NormalFeatureExtractor:
             return feature_matrix
             
         else:
-            feature_matrix = np.zeros((len(chunk_texts),len(feature_names)), dtype=np.int8)        
+            feature_matrix = np.zeros((len(chunk_texts),len(feature_names)), dtype=np.int16)        
             grammar_checker = GrammarChecker()
             grammar_checker.init()
 
