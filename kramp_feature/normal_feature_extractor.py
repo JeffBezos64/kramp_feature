@@ -24,7 +24,7 @@ class NormalFeatureExtractor:
                  char_ngram_max_features: int=1000,
                  max_edit_distance: int=2,
                  substitution_max_features: int=400,
-                 function_words_path: str='feature_extractors/function_words.txt',
+                 function_words_path: str='/csse/research/NativeLanguageID/mthesis-phonological/kramp-feature-project/kramp_feature/function_words.txt',
                  max_function_words_features: int=None,
                  max_pos_features: int=300,
                  pos_ngram_size: int=3,

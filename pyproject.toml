@@ -8,6 +8,8 @@ dependencies = [
     "scikit-learn",
     "numpy",
     "tqdm",
+    "seaborn",
+    "matplotlib"
 ]
 classifiers = [
     "Private :: Do Not Upload",
